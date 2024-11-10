@@ -1,11 +1,11 @@
 import React,{useId} from "react"
 
-function Select(){
+function Select({
     options,
     label,
     className,
     ...props
-}, ref{
+}, ref){
     const id =useId()
     return(
         <div className='w-full'>

@@ -7,7 +7,7 @@ export class Service {
     bucket;
     
     constructor(){
-        this.client,setEndpoint(conf.appwriteUrl).
+        this.client.setEndpoint(conf.appwriteUrl).
         setProject(conf.appwriteProjectId)
         this.databases=new Databases(this.client)
         this.bucket=new Storage(this.client)
@@ -108,4 +108,4 @@ export class Service {
 }
 
 const service=new Service()
-export default service()
+export default service

@@ -1,12 +1,12 @@
-import React from 'react'
+import React,{useId} from 'react'
 
 const Input =React.forwardRef(function Input({
     label,
     type='text',
     className="",
-    ..props},
+    ...props},
     ref){
-        const id=useId
+        const id=useId()
         return(
             <div className='w-full'>
                 {label && (

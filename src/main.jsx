@@ -10,7 +10,7 @@ import Home from"./pages/Home.jsx"
 import Login from "./pages/Login.jsx"
 import Protected from "./components/AuthLayout.jsx"
 import Signup from "./pages/Signup.jsx"
-import AllPost from './pages/AllPost.jsx'
+import AllPosts from './pages/AllPost.jsx'
 import AddPost from './pages/AddPost.jsx'
 import EditPost from "./pages/EditPost.jsx"
 import Post from "./pages/Post.jsx"
@@ -44,12 +44,12 @@ const router = createBrowserRouter([
         path: "/all-posts",
         element:(
           <Protected authentication>
-            <AllPost/>
+            <AllPosts/>
           </Protected>
         )
       },
       {
-        path: "/add-posts",
+        path: "/add-post",
         element:(
           <Protected authentication>
             <AddPost/>
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
         )
       },
       {
-        path: "/edit-posts/:slug",
+        path: "/edit-post/:slug",
         element:(
           <Protected authentication>
             <EditPost/>

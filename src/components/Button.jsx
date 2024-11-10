@@ -1,13 +1,13 @@
 import React from 'react'
 
-function Button() {{
+function Button( {
     children,
-    type="button"
+    type="button",
     bgColor="bg-blue-600",
     textColor="text-white",
-    className=""
+    className="",
     ...props
-}
+}){
 
   return (
     <button
